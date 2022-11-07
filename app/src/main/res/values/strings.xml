@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">JsonDataGenerator</string>
+    <string name="dots">...</string>
+    <string name="response">Response : waiting</string>
+</resources>

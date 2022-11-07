@@ -1,0 +1,43 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    ext.kotlin_version = '1.7.10'
+    repositories {
+        jcenter()
+        google()
+        mavenCentral()
+
+    }
+    dependencies {
+        classpath 'com.newrelic.agent.android:agent-gradle-plugin:6.9.0'
+        classpath 'com.android.tools.build:gradle:7.3.0'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+//plugins {
+//    id 'java'
+//    id "de.undercouch.download" version "3.4.3"
+//}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+
+    }
+}
+
+//task downloadNewrelic(type: Download) {
+//    mkdir 'newrelic'
+//    src 'https://download.newrelic.com/newrelic/java-agent/newrelic-agent/current/newrelic-java.zip'
+//    dest file('newrelic')
+//}
+//
+//task unzipNewrelic(type: Copy) {
+//    from zipTree(file('newrelic/newrelic-java.zip'))
+//    into rootDir
+//}
+//
