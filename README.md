@@ -1,11 +1,16 @@
-# JSONDataGenerator
+# JSON Data Generator
 
 For ease I have created all the files and config which needed to be in place for instrumenting the application with NR. You just need to perform minor modifications as follows: 
 
-* Install Java SDK 
+### Android Studio 
+
+* Install Java 
 * Download Android Studio from https://developer.android.com/studio 
+* Install Android SDKs
 * Once you have the application on your machine, open the application code in Android studio 
   * Run `./gradlew build`
+
+### On New Relic Portal 
 * Go to New Relic > Add Mobile Application 
 * Select Android 
 * Follow the instructions as mentioned
